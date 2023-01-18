@@ -1,19 +1,20 @@
-function ts(){
-    var a = document.getElementById('ex').value;
-    var b = a.length;
-    var p=document.getElementById('p').value
-   if(b==0){
-    document.getElementById('ex').style.background ="red";
-    alert('Escreva seu nome mane')
-    document.getElementById('p').innerHTML='cu'
-    
-   }
-       
+const colors=["green","red","rgba(133,122,200)",
+"#f15825"]
+
+const btn=document.getElementById("btn")
+const color=document.querySelector(".color")
 
 
+btn.addEventListener("click",function(){
+//get button between 0-3 color []
+  const randomNumber=getRandomNumber()
+ // console.log(randomNumber)
+  document.body.style.backgroundColor=colors[randomNumber]
+  color.textContent=colors[randomNumber]
 
-   
+})
 
+function getRandomNumber() {
+    return Math.floor( Math.random()*colors.length)
 
-   
 }
