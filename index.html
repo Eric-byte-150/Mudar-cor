@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@500&family=Poppins:ital,wght@0,200;0,300;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;1,8..144,200&family=Titillium+Web:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="formulario">
+        <div class="container">
+            <header>
+                Contate-Nos
+            </header>
+            <form action="https://formsubmit.co/ericribeiro756@gmail.com" method="POST">
+               
+                <input type="text" name="nome" placeholder="Nome completo" id="ex">
+                 <p id="p"></p>
+                <input type="email" name="email" placeholder="Digite seu email" class="inputs" required>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+              
+                <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Digite sua mensagem" class="inputs" required></textarea>
+                <div>
+                    <button onclick="ts()">Enviar</button>
+
+                </div>
+            </form>
+           
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
